@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style type="text/css">
+        body {
+            color: rgb(248, 150, 2);
+          background-color: rgb(0, 0, 0);
+        }
+      </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>gitPub</h1>
+    <ul>
+        <% for(let i = 0; i < drinks.length; i++) { %>
+            <li>
+                <a href="/drinks/<%= i %>">
+                    <%= drinks[i].name.charAt(0).toUpperCase() + drinks[i].name.slice(1);  %></a>
+            </li>
+      <%  } %>
+
+
+      <% for(let i = 0; i < food.length; i++) { %>
+
+            <li>
+                <a href="/food/<%= i %>">
+                <%= food[i].name.charAt(0).toUpperCase() + food[i].name.slice(1);  %></a>
+            </li>
+      <%  } %>
+
+
+
+    </ul>
+</body>
+</html>
